@@ -1,0 +1,53 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Quake Audio Social Network</title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="/js/users.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body{ padding-top:80px; word-wrap:break-word; }
+    </style>
+</head>
+<body>
+<div class="container">
+    
+    <div class="page-header text-center">
+        <h1>Find Users</h1>
+        <a class="btn btn-default btn-sm" href="/">Home</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-0 col-md-2">
+        </div>
+        <div class="col-sm-12 col-md-8">
+            <div class="well">
+                <h3 class="text-center">Click to Follow a Friend</h3>
+
+                    <p>
+                       
+                        <% for(var i in followed) { %>
+                            <a class="btn btn-default btn-lg btn-block"><%= followed[i] %></a>
+                        <% } %>
+                        
+                    </p>
+                
+
+            </div>
+        </div>
+
+    </div>
+    
+                
+
+</div>
+</body>
+</html>
