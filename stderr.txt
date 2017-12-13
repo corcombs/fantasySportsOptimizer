@@ -1,0 +1,19 @@
+js-bson: Failed to load c++ bson extension, using pure JS version
+/home/ubuntu/nodeFantasySports/app/routes.js:59
+                                for(var i = 0, len1 = obj.g.vls.pstsg.length; i< len1; i++){
+                                                                     ^
+
+TypeError: Cannot read property 'length' of undefined
+    at Request._callback (/home/ubuntu/nodeFantasySports/app/routes.js:59:70)
+    at Request.self.callback (/usr/lib/nodejs/request/index.js:148:22)
+    at emitTwo (events.js:87:13)
+    at Request.emit (events.js:172:7)
+    at Request.<anonymous> (/usr/lib/nodejs/request/index.js:896:14)
+    at emitOne (events.js:82:20)
+    at Request.emit (events.js:169:7)
+    at IncomingMessage.<anonymous> (/usr/lib/nodejs/request/index.js:847:12)
+    at emitNone (events.js:72:20)
+    at IncomingMessage.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:905:12)
+    at nextTickCallbackWith2Args (node.js:441:9)
+    at process._tickCallback (node.js:355:17)

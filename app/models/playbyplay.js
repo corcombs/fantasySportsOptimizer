@@ -1,10 +1,10 @@
-// players.js
+// playbyplay.js
 // load the things we need
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema,
     ObjectId = Schema.ObjectId;
 // define the schema for our user model
-var playersSchema = new Schema({
+var playbyplaySchema = new Schema({
     playerFName      : String,
     playerLName      : String,
     dateOfGame      : Date,
@@ -43,11 +43,11 @@ var playersSchema = new Schema({
     memo            : String
 
 });
-playersSchema.index({ playerFName: 1,playerLName: 1, dateOfGame: 1}, { unique: true });
+playbyplaySchema.index({ playerFName: 1,playerLName: 1, dateOfGame: 1}, { unique: true });
 // methods ======================
 // generating a hash
 
 
 // create the model for users and expose it to our app
-module.exports = mongoose.model('PlayerStats', playersSchema);
+module.exports = mongoose.model('playByPlay', playbyplaySchema);
 

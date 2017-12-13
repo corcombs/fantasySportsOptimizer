@@ -42,7 +42,7 @@
                     <p>
                        
                         <% for(var i in user) { %>
-                            <a class="btn btn-default btn-lg btn-block" onclick='aClicked(this)' id="<%= user[i]._id %>"><%= user[i].profileInfo.firstName +" "+ user[i].profileInfo.lastName %></a>
+                            <a class="btn btn-default btn-lg btn-block" onclick='aClicked(this)' id="<%= user[i]._id %>"><%= user[i].local.email +" "+ user[i].profileInfo.lastName %></a>
                         <% } %>
                         
                     </p>

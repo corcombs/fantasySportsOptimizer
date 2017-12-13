@@ -52,6 +52,6 @@ const options = {
   key: fs.readFileSync(configVar.keyPath),
   cert: fs.readFileSync(configVar.certPath)
 };
-http.createServer(app).listen(8080);
-https.createServer(options, app).listen(3000);
+http.createServer(app).listen(8000);
+https.createServer(options, app).listen(9000);
 console.log('The magic happens on port ' + port);
